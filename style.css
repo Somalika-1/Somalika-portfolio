@@ -51,8 +51,7 @@
         }
 
         .nav {
-            max-width: 1200px;
-            margin: 0;
+            max-width: 800px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -63,17 +62,20 @@
             font-weight: 700;
             color: var(--secondary-color);
             cursor: default;
-            margin-right: 470px;
+            margin-right: 18%;
+            text-decoration: none;
         }
 
         .nav-links {
             display: flex;
             gap: 2rem;
+            margin-right: 2%;
         }
 
         .nav-links a {
             font-size: 2rem;
-            margin-left: 4rem;
+            margin-left: 2%;
+            margin-right: 2%;
             font-weight: 700;  
             color: var(--primary-color);
             transition: var(--transition);
@@ -99,6 +101,7 @@
 
 
         /* Hero Section */
+        
 .hero {
     display: flex;
     align-items: center;
