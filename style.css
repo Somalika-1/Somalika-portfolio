@@ -1580,13 +1580,26 @@
         gap: 1px;
     }
 
-    .project-card {
-        margin: 3px 10px;
+    .timeline-wrapper {
+        margin-right: 10px;
     }
 
     .projects-grid{
+        margin: 1px 10px;
+    }
+
+    .project-card{
+        margin-bottom: 3px;
+    }
+
+    .contact-container{
+        margin: 1px 10px;
+    }
+
+    .skills-grid{
         margin: 3px 10px;
     }
+
     .projects-header h2, 
     .contact-form h3, 
     .contact-info h3 {
