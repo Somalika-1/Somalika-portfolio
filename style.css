@@ -1548,6 +1548,17 @@
         font-size: 40%;
     }
     
+    .hero{
+        justify-content: space-around;
+    }
+
+    .project-card {
+        margin: 3px 10px;
+    }
+
+    .projects-grid{
+        margin: 3px 4rem;
+    }
     .education-header h2, 
     .projects-header h2, 
     .contact-form h3, 
