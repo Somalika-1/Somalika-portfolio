@@ -121,7 +121,7 @@
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 700px;
     position: relative;
     padding: 2rem;
     border-radius: 20px;
@@ -130,10 +130,11 @@
     border: 2px solid rgba(255, 228, 230, 0.5);
     box-shadow: 0 8px 32px rgba(159, 18, 57, 0.1);
     animation: slideIn 1s ease-out;
+    margin-right: 20px;
 }
 
 .hero-content h1 {
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     position: relative;
@@ -161,10 +162,14 @@
 .image {
     position: relative;
     z-index: 1;
+    margin-left: 20px;
+
 }
 
 .image img {
-    width: 25vw;
+    width: 28vw;
+    height: 48vh;
+    object-fit: cover;
     border: 3px solid var(--dark-color);
     border-radius: 50%;
     box-shadow: 10px 10px 20px rgba(159, 18, 57, 0.2);
@@ -258,7 +263,7 @@
         transform: translateY(0%);
     }
     50%{
-        transform: translateY(-2.4rem);
+        transform: translateY(-2rem);
     }
     100%{
         transform: translateY(0);
@@ -1360,30 +1365,14 @@
         margin-right: 200px;
     }
     
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding-top: 5rem;
-    }
-    
     .hero-content {
         margin-top: 3rem;
-        max-width: 100%;
-    }
-    
-    .hero-content h1::after {
-        left: 50%;
-        transform: translateX(-50%);
     }
     
     .image img {
-        width: 40vw;
+        width: 28vw;
+        height: 40vh;
         margin-top: 5rem;
-    }
-    
-    .social-media {
-        justify-content: center;
-        display: flex;
     }
     
     .contact-container {
@@ -1403,12 +1392,33 @@
     html {
         font-size: 45%;
     }
+
+    .header{
+        margin-bottom: 3rem;
+    }
     
     .hero{
+        flex-direction: column-reverse;
         gap: 2px;
         justify-content: space-around;
         align-items: center;
         align-content: space-around;
+        text-align: center;
+    }
+
+    .hero-content h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .image img {
+        height: 50vh;
+        width: 10vw;
+    }
+
+    .social-media {
+        justify-content: center;
+        display: flex;
     }
 
     /* Mobile Menu Styles */
@@ -1442,6 +1452,11 @@
         font-size: 2rem;
     }
     
+    .image img{
+        width: 5vw;
+        height: 40vh;
+    }
+
     .logo {
         margin-right: 0;
     }
@@ -1457,7 +1472,7 @@
     
     .timeline-content {
         width: calc(100% - 60px);
-        margin-left: 60px !important;
+        margin-left: 40px !important;
         text-align: left !important;
     }
     
@@ -1488,7 +1503,8 @@
     
     /* Hero Section Adjustments */
     .image img {
-        width: 50vw;
+        width: 40vw;
+        height: 40vh;
     }
     
     .hero-content h1 {
@@ -1518,7 +1534,10 @@
 
     .hero{
         align-content: space-around;
-        gap: 4px;
+    }
+
+    .image, .hero-content{
+        margin: auto;
     }
 
     .skills-grid{
@@ -1530,7 +1549,7 @@
     }
 
     .image img {
-        width: 70vw;
+        width: 50vw;
         margin-top: 5rem;
     }
     
@@ -1580,7 +1599,7 @@
         justify-content: space-around;
         align-items: center;
         align-content: space-around;
-        gap: 1px;
+        gap: 0;
     }
 
     .timeline-wrapper {
@@ -1589,6 +1608,11 @@
 
     .projects-grid{
         margin: 1px 10px;
+    }
+
+    .image img {
+        width: 60vw;
+        height: 40vh;
     }
 
     .project-card{
@@ -1601,6 +1625,16 @@
 
     .skills-grid{
         margin: 3px 10px;
+    }
+
+    .skill-category{
+        margin-bottom: 4px;
+    }
+
+    .skills-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+        gap: 4px;
     }
 
     .projects-header h2, 
